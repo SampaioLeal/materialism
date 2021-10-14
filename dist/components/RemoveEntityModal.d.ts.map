@@ -1,0 +1,1 @@
+{"version":3,"file":"RemoveEntityModal.d.ts","sourceRoot":"","sources":["../../src/components/RemoveEntityModal.tsx"],"names":[],"mappings":";AAMA,OAAO,EAAE,cAAc,EAAE,MAAM,wBAAwB,CAAC;AAExD,UAAU,gBAAgB;IACxB,IAAI,EAAE,OAAO,CAAC;IACd,QAAQ,EAAE,cAAc,CAAC;IAEzB,WAAW,IAAI,IAAI,CAAC;CACrB;AAED,wBAAgB,iBAAiB,CAAC,EAChC,IAAI,EACJ,QAAQ,EACR,WAAW,GACZ,EAAE,gBAAgB,eAyBlB"}

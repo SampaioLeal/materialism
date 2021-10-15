@@ -31,8 +31,7 @@
     "mobx": "^6.3.3",
     "mobx-react-lite": "^3.2.1",
     "react-debounce-input": "^3.2.5",
-    "react-input-mask": "^2.0.4",
-    "yup": "^0.32.11"
+    "react-input-mask": "^2.0.4"
   },
   "peerDependencies": {
     "next": ">=11.1.0",

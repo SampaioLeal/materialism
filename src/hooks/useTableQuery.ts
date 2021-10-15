@@ -4,6 +4,7 @@ import { AxiosInstance } from "axios";
 import snackbarStore from "../stores/snackbar";
 
 export interface TableQueryHook {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   data: any[];
   page: number;
   count: number;

@@ -1,6 +1,6 @@
 /// <reference types="react" />
 import { SvgIconComponent } from "@mui/icons-material";
-import { GridColDef } from "@mui/x-data-grid";
+import { GridColDef, GridRowIdGetter } from "@mui/x-data-grid";
 import { TableQueryHook } from "../hooks/useTableQuery";
 interface Action {
     title: string;
@@ -11,8 +11,9 @@ interface Action {
 interface MuiTableProps {
     columns: GridColDef[];
     listHook: TableQueryHook;
+    getRowId?: GridRowIdGetter;
     actions?: Action[];
 }
-declare function MuiTable({ columns, listHook, actions }: MuiTableProps): JSX.Element;
+declare function MuiTable({ columns, listHook, actions, getRowId }: MuiTableProps): JSX.Element;
 export default MuiTable;
 //# sourceMappingURL=index.d.ts.map

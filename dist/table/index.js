@@ -50,7 +50,7 @@ var localeText = {
 // TODO: usar genéricos
 // TODO: remover outlined das células
 function MuiTable(_a) {
-    var columns = _a.columns, listHook = _a.listHook, actions = _a.actions;
+    var columns = _a.columns, listHook = _a.listHook, actions = _a.actions, getRowId = _a.getRowId;
     var _b = (0, react_1.useState)(null), anchorEl = _b[0], setAnchorEl = _b[1];
     var _c = (0, react_1.useState)([]), sortModel = _c[0], setSortModel = _c[1];
     var colsWithAction = (0, react_1.useRef)(__spreadArray([
@@ -108,7 +108,7 @@ function MuiTable(_a) {
                     Pagination: Pagination_1.default,
                     LoadingOverlay: Loading_1.default,
                     NoRowsOverlay: NoRowsOverlay_1.default,
-                }, autoHeight: true, disableColumnFilter: true, rows: listHook.data, loading: listHook.isLoading, rowCount: listHook.count, page: listHook.page, onPageChange: listHook.changePage, columns: colsWithAction.current, style: { height: listHook.count ? undefined : 300, maxHeight: 700 }, isRowSelectable: function () { return false; }, localeText: localeText, onSortModelChange: handleSort, sortModel: sortModel, pageSize: defaultPageSize, pagination: true, paginationMode: "server", sortingMode: "server", filterMode: "server" }, void 0), (0, jsx_runtime_1.jsx)(material_1.Menu, __assign({ anchorEl: anchorEl, open: isMenuOpen, onClose: closeMenu }, { children: actions === null || actions === void 0 ? void 0 : actions.map(function (action) {
+                }, autoHeight: true, disableColumnFilter: true, rows: listHook.data, loading: listHook.isLoading, rowCount: listHook.count, page: listHook.page, onPageChange: listHook.changePage, columns: colsWithAction.current, style: { height: listHook.count ? undefined : 300, maxHeight: 700 }, isRowSelectable: function () { return false; }, localeText: localeText, onSortModelChange: handleSort, sortModel: sortModel, pageSize: defaultPageSize, getRowId: getRowId, pagination: true, paginationMode: "server", sortingMode: "server", filterMode: "server" }, void 0), (0, jsx_runtime_1.jsx)(material_1.Menu, __assign({ anchorEl: anchorEl, open: isMenuOpen, onClose: closeMenu }, { children: actions === null || actions === void 0 ? void 0 : actions.map(function (action) {
                     function isDisabled() {
                         if (action.disabled === undefined)
                             return false;

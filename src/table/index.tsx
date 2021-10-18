@@ -6,6 +6,7 @@ import {
   GridColDef,
   GridLocaleText,
   GridRenderCellParams,
+  GridRowIdGetter,
   GridSortModel,
 } from "@mui/x-data-grid";
 import { useState, createElement, useEffect, useRef } from "react";
@@ -31,6 +32,7 @@ interface MuiTableProps {
   columns: GridColDef[];
   listHook: TableQueryHook;
 
+  getRowId?: GridRowIdGetter;
   actions?: Action[];
 }
 
@@ -52,7 +54,7 @@ const localeText: Partial<GridLocaleText> = {
 // TODO: tipar actions
 // TODO: usar genéricos
 // TODO: remover outlined das células
-function MuiTable({ columns, listHook, actions }: MuiTableProps) {
+function MuiTable({ columns, listHook, actions, getRowId }: MuiTableProps) {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [sortModel, setSortModel] = useState<GridSortModel>([]);
   const colsWithAction = useRef([
@@ -153,6 +155,7 @@ function MuiTable({ columns, listHook, actions }: MuiTableProps) {
         onSortModelChange={handleSort}
         sortModel={sortModel}
         pageSize={defaultPageSize}
+        getRowId={getRowId}
         pagination
         paginationMode="server"
         sortingMode="server"

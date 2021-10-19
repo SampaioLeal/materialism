@@ -4,6 +4,7 @@ import { useMemo } from "react";
 import CheckboxGroupInput from "../forms/inputs/CheckboxGroupInput";
 import { GridActions } from "../components/GridActions";
 import { TabPanel } from "../components/TabPanel";
+import { FilterEnum } from "../types";
 
 interface EnumFilterProps {
   name: string;

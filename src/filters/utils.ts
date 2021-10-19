@@ -1,4 +1,5 @@
 import { GridColDef } from "@mui/x-data-grid";
+import { Filter } from "../types";
 
 export function buildInitialValues(columns: GridColDef[]) {
   const initialValues: { [key: string]: unknown } = {};

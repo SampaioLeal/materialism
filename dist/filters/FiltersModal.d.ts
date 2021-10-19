@@ -1,4 +1,5 @@
 /// <reference types="react" />
+import { Filter } from "../types";
 interface FiltersModalProps {
     state: boolean;
     anchorEl: HTMLButtonElement | null;

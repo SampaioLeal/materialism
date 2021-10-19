@@ -1,4 +1,5 @@
 /// <reference types="react" />
+import { FilterEnum } from "../types";
 interface EnumFilterProps {
     name: string;
     activeTab: number;

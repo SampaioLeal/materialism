@@ -11,6 +11,7 @@ import { formatDate } from "../utils/formatters";
 
 import { FiltersModal } from "../filters/FiltersModal";
 import { buildInitialValues, getFilterValue } from "./utils";
+import { Filter } from "../types";
 
 const SmallButton = styled(Button)(({ theme }) => ({
   background: theme.palette.background.paper,

@@ -8,6 +8,7 @@ import {
   Tabs,
 } from "@mui/material";
 import { memo, useState } from "react";
+import { Filter } from "../types";
 
 import { CPFFilter } from "./CPFFilter";
 import { DateFilter } from "./DateFilter";

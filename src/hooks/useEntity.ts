@@ -9,15 +9,15 @@ export interface EntityHook<T> {
 
   get(): Promise<void>;
   getAll(): Promise<T[]>;
-  getById(id: number): Promise<T>;
+  getById(id: string | number): Promise<T>;
   create(data: Omit<T, "id">): Promise<T>;
-  edit(id: number, data: Partial<T>): Promise<T>;
+  edit(id: string | number, data: Partial<T>): Promise<T>;
 }
 
 interface EntityConfig {
   api: AxiosInstance;
   path: string;
-  id?: number;
+  id?: string | number;
 }
 
 // TODO: use mobx for entities management
@@ -65,7 +65,7 @@ function useEntity<Entity>(config: EntityConfig) {
     }
   }
 
-  async function getById(id: number) {
+  async function getById(id: string | number) {
     try {
       const response = await api.get(`${config.path}/${id}`);
       return response.data as Entity;
@@ -92,7 +92,7 @@ function useEntity<Entity>(config: EntityConfig) {
   }
 
   async function edit<T>(
-    id: number,
+    id: string | number,
     data: Partial<T> | Partial<Entity>,
     options?: AxiosRequestConfig
   ) {

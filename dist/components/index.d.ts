@@ -6,4 +6,5 @@ export { SearchInput } from "./SearchInput";
 export { Snackbar } from "./Snackbar";
 export { Spacer } from "./Spacer";
 export { TabPanel } from "./TabPanel";
+export { ConfirmModal } from "./ConfirmModal";
 //# sourceMappingURL=index.d.ts.map

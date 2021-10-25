@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.TabPanel = exports.Spacer = exports.Snackbar = exports.SearchInput = exports.RemoveEntityModal = exports.PageWrap = exports.GridActions = exports.AddButton = void 0;
+exports.ConfirmModal = exports.TabPanel = exports.Spacer = exports.Snackbar = exports.SearchInput = exports.RemoveEntityModal = exports.PageWrap = exports.GridActions = exports.AddButton = void 0;
 var AddButton_1 = require("./AddButton");
 Object.defineProperty(exports, "AddButton", { enumerable: true, get: function () { return AddButton_1.AddButton; } });
 var GridActions_1 = require("./GridActions");
@@ -17,3 +17,5 @@ var Spacer_1 = require("./Spacer");
 Object.defineProperty(exports, "Spacer", { enumerable: true, get: function () { return Spacer_1.Spacer; } });
 var TabPanel_1 = require("./TabPanel");
 Object.defineProperty(exports, "TabPanel", { enumerable: true, get: function () { return TabPanel_1.TabPanel; } });
+var ConfirmModal_1 = require("./ConfirmModal");
+Object.defineProperty(exports, "ConfirmModal", { enumerable: true, get: function () { return ConfirmModal_1.ConfirmModal; } });

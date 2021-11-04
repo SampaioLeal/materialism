@@ -71,7 +71,6 @@ export function ConfirmModal(props: ConfirmModalProps) {
               <Grid item xs={6}>
                 <LoadingButton
                   loading={confirmLoading}
-                  loadingPosition="start"
                   onClick={onConfirm}
                   color="primary"
                   variant="contained"

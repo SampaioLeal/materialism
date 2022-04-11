@@ -1,1 +1,0 @@
-{"version":3,"file":"PageWrap.d.ts","sourceRoot":"","sources":["../../src/components/PageWrap.tsx"],"names":[],"mappings":";AAGA,UAAU,aAAa;IACrB,IAAI,CAAC,EAAE,OAAO,CAAC;IACf,QAAQ,EAAE,KAAK,CAAC,UAAU,GAAG,KAAK,CAAC,aAAa,GAAG,KAAK,CAAC,WAAW,CAAC;CACtE;AAED,iBAAS,iBAAiB,CAAC,EAAE,QAAQ,EAAE,IAAI,EAAE,EAAE,aAAa,eAW3D;AAED,eAAO,MAAM,QAAQ;;CAA8B,CAAC"}

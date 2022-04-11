@@ -7,9 +7,23 @@ interface CheckboxInputProps {
 }
 
 function CheckboxInput({ ...props }: CheckboxInputProps) {
-  const [field] = useField(props);
+  const [field, , helpers] = useField(props);
 
-  return <Checkbox {...field} checked={field.value} color="primary" />;
+  function handleChange(
+    _: React.ChangeEvent<HTMLInputElement>,
+    checked: boolean
+  ) {
+    helpers.setValue(checked);
+  }
+
+  return (
+    <Checkbox
+      {...field}
+      onChange={handleChange}
+      checked={field.value}
+      color="primary"
+    />
+  );
 }
 
 export default CheckboxInput;
